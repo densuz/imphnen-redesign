@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPHNEN - Ingin Menjadi Programmer Handal?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://imphnen.dev/_next/image?url=%2Flogo.webp&w=1200&q=75" alt="IMPHNEN Logo" class="h-10 w-10 rounded-full">
+                <span class="text-xl font-bold">IMPHNEN</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="hover:text-indigo-200 transition">Home</a>
+                <a href="#" class="hover:text-indigo-200 transition">Community</a>
+                <a href="#" class="hover:text-indigo-200 transition">Events</a>
+                <a href="#" class="hover:text-indigo-200 transition">Resources</a>
+                <a href="#" class="hover:text-indigo-200 transition">About</a>
+            </nav>
+            <button class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Komunitas Programmer Indonesia
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 font-light">
+                    Programmer Handal Enggan Ngoding
+                </p>
+                <p class="text-lg mb-8 opacity-90">
+                    Komunitas programmer terbesar di Indonesia, tempat berbagi meme, tutorial, pengalaman dan yapping
+                </p>
+                <div class="flex flex-wrap gap-6 mb-8">
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4 text-center">
+                        <p class="text-2xl font-bold">180K+</p>
+                        <p class="text-sm">Member</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4 text-center">
+                        <p class="text-2xl font-bold">500+</p>
+                        <p class="text-sm">Meme Harian</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-lg p-4 text-center">
+                        <p class="text-2xl font-bold">24/7</p>
+                        <p class="text-sm">Yapping</p>
+                    </div>
+                </div>
+                <a href="#join" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full hover:bg-indigo-100 transition duration-300 inline-flex items-center">
+                    Join Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://imphnen.dev/_next/image?url=%2Flogo.webp&w=1200&q=75" alt="IMPHNEN Community" class="rounded-full w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover border-4 border-white shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                Apa Kata Mereka Tentang Komunitas Kami?
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://picsum.photos/100/100?random=1" alt="Andi Pratama" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Andi Pratama</h4>
+                            <p class="text-sm text-indigo-600">Backend Developer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Komunitas ini sangat membantu perkembangan karir saya. Saya bisa belajar teknologi terbaru dan berkolaborasi dengan developer lain."
+                    </p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://picsum.photos/100/100?random=2" alt="Sarah Wijaya" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Wijaya</h4>
+                            <p class="text-sm text-indigo-600">Frontend Engineer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Acara sharing session-nya sangat inspiratif. Saya jadi termotivasi untuk terus mengembangkan skill di bidang frontend development."
+                    </p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://picsum.photos/100/100?random=5" alt="Rizal Fauzi" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Rizal Fauzi</h4>
+                            <p class="text-sm text-indigo-600">Fullstack Developer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Bergabung di komunitas ini membuka banyak kesempatan networking dan project menarik. Sangat recommended untuk developer semua level!"
+                    </p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://picsum.photos/100/100?random=9" alt="Dewi Lestari" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Dewi Lestari</h4>
+                            <p class="text-sm text-indigo-600">Mobile Developer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Materi workshop-nya praktis dan langsung applicable. Mentor-mentornya juga berpengalaman di industri."
+                    </p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://picsum.photos/100/100?random=10" alt="Fajar Setiawan" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Fajar Setiawan</h4>
+                            <p class="text-sm text-indigo-600">DevOps Engineer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Komunitas yang solid dan saling support. Tidak pernah ragu untuk bertanya karena semua anggota sangat responsif."
+                    </p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 6 -->
+                <div class="testimonial-card bg-white p-6 rounded-xl shadow-md transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://picsum.photos/100/100?random=6" alt="Budi Santoso" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Budi Santoso</h4>
+                            <p class="text-sm text-indigo-600">UI/UX Designer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Kolaborasi antara designer dan developer di komunitas ini sangat smooth. Banyak belajar best practices untuk workflow yang lebih baik."
+                    </p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="join" class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                LET'S GO SAAT NYA KAMU JOIN!
+            </h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">
+                Jadilah bagian dari komunitas developer terbesar di Indonesia. Tingkatkan skill, perluas jaringan, dan raih kesempatan karir bersama kami!
+            </p>
+            <a href="https://imphnen.dev/#community" class="bg-white text-indigo-700 font-bold py-4 px-12 rounded-full hover:bg-indigo-100 transition duration-300 inline-flex items-center pulse-animation">
+                Join Sekarang <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <div class="mt-16">
+                <p class="text-5xl font-bold mb-2">180.000+</p>
+                <p class="text-xl">Programmer Sudah Bergabung</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="https://imphnen.dev/_next/image?url=%2Flogo.webp&w=1200&q=75" alt="IMPHNEN Logo" class="h-10 w-10 rounded-full">
+                        <span class="text-xl font-bold">IMPHNEN</span>
+                    </div>
+                    <p class="text-gray-400 max-w-xs">
+                        Komunitas programmer terbesar di Indonesia untuk berbagi pengetahuan dan pengalaman.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Tautan</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Community</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Events</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Resources</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Komunitas</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Discord</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Telegram</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">GitHub</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Instagram</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                        <ul class="space-y-2">
+                            <li class="text-gray-400">hello@imphnen.dev</li>
+                            <li class="text-gray-400">+62 123 4567 890</li>
+                            <li class="flex space-x-4 mt-4">
+                                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 IMPHNEN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle (can be expanded)
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden');
+            const navMenu = document.querySelector('nav');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                navMenu.classList.toggle('hidden');
+                navMenu.classList.toggle('flex');
+                navMenu.classList.toggle('flex-col');
+                navMenu.classList.toggle('absolute');
+                navMenu.classList.toggle('top-16');
+                navMenu.classList.toggle('right-4');
+                navMenu.classList.toggle('bg-indigo-800');
+                navMenu.classList.toggle('p-4');
+                navMenu.classList.toggle('rounded-lg');
+                navMenu.classList.toggle('space-y-4');
+                navMenu.classList.toggle('space-x-0');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
